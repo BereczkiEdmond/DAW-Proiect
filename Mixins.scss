@@ -1,0 +1,30 @@
+@mixin getImage($imgPath, $w, $h){
+    background-image: url($imgPath);
+    width: $w;
+    height: $h;
+}
+
+@mixin SolidBlock($pos, $back, $h){
+    position: $pos;
+    background-color: $back;
+    height: $h;
+}
+
+@mixin side{
+    position: absolute;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    width: 42%;
+    height: 50%;
+}
+
+@mixin btn($col, $backcol){
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    width: $btnW;
+    height: $btnH;
+    color: $col;
+    background-color: $backcol;
+}

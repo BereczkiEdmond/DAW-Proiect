@@ -1,0 +1,246 @@
+@import "Variables";
+@import "Mixins";
+
+
+body{
+    margin: 0;
+}
+
+#main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#main > .fullWidth{
+    width: 2000px;
+}
+
+.container{
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 20%;
+    width: 50%;
+    height: 100%;
+}
+
+#header{
+    position: relative;
+    background: linear-gradient(300deg, $blueTheme 0%, $blueTheme 60%, $whiteTheme 60%, $whiteTheme 100%);
+    height: $longL;
+}
+
+#logo1{
+    position: absolute;
+    @include getImage("Logo.png", $logoW, $logoH);
+    margin: 10px;
+}
+
+.phone{
+    position: absolute;
+    @include getImage("Phone.png", $phoneW, $phoneH);
+    bottom: 0;
+}
+
+#headerInfo{
+    position: absolute;
+    right: 0;
+    width: $hinfoW;
+    height: $hinfoH;
+    margin-top: 20px;
+}
+
+.t{
+    font-size: 30px;
+}
+
+.h{
+    font-size: 42px;
+}
+
+.dark{
+    color: $grayTheme;
+}
+
+.bright{
+    color: $whiteTheme;
+}
+
+.blue{
+    color: $blueTheme;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#b1{
+    @include btn($whiteTheme, $blueTheme);
+}
+
+#b2{
+    @include btn($whiteTheme, $grayTheme);
+}
+
+#playBtn{
+    position: absolute;
+    @include getImage("PlayBtn.png", $playBtn_W, $playBtn_H);
+    bottom: 0;
+}
+
+
+
+
+
+#about{
+    @include SolidBlock(relative, $grayTheme, $longL);
+}
+
+#LSide{
+    @include side;
+}
+
+#RSide{
+    @include side;
+    right: 0;
+}
+
+#b3{
+    @include btn($whiteTheme, $blueTheme);
+}
+
+#screens{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 90%;
+}
+
+.scr{
+    display: flex;
+    background-color: $lgrayTheme;
+    margin: 6px;
+    width: 100%;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.navItem{
+    width: 20px;
+    height: 20px;
+    background-color: $lgrayTheme;
+    border-radius: 25px;
+    margin: 4px;
+}
+
+.navItemSelected{
+    width: 40px;
+    height: 20px;
+    background-color: $whiteTheme;
+    border-radius: 25px;
+    margin: 4px;
+}
+
+
+
+
+
+
+#quote1{
+    @include SolidBlock(relative, $blueTheme, $longL);
+}
+
+.titleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottomBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+
+#quote{
+    @include getImage("QuoteBox.png", $quoteW, $quoteH);
+}
+
+#QMU{
+    @include getImage("QuotationMarkUp.png", $QMW, $QMH);
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
+
+#QMD{
+    @include getImage("QuotationMarkDown.png", $QMW, $QMH);
+    position: absolute;
+    bottom: 35px;
+    right: 15px;
+
+}
+
+#QText{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+
+
+
+
+#joinUs{
+    @include SolidBlock(relative, $grayTheme, $shortL);
+}
+
+#mailBox{
+    display: flex;
+    justify-content: center;
+}
+
+.mar{
+    margin: 10px;
+}
+
+#b4{
+    @include btn($blueTheme, $whiteTheme);
+}
+
+
+
+
+
+
+#footer{
+    @include SolidBlock(relative, $whiteTheme, $vshortL);
+}
+
+#items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#logo2{
+    @include getImage("Logo.png", $logoW, $logoH);
+    margin: 10px;
+}
+
+#AllRightsText{
+    @include getImage("AllRights.png", $AllR_W, $AllR_H);
+}
