@@ -10,10 +10,6 @@ body{
     @include ElementLayout($fdir: column);
 }
 
-#main > .fullWidth{
-    width: 2000px;
-}
-
 .container{
     display: flex;
     @include ItemDefinition(50%, 100%, 0% 20% 0% 30%);
