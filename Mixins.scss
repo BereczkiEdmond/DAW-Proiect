@@ -1,30 +1,51 @@
-@mixin getImage($imgPath, $w, $h){
-    background-image: url($imgPath);
-    width: $w;
-    height: $h;
-}
-
-@mixin SolidBlock($pos, $back, $h){
-    position: $pos;
+@mixin SolidBlock($back, $h){
     background-color: $back;
     height: $h;
 }
 
-@mixin side{
-    position: absolute;
-    margin-top: 25%;
-    margin-bottom: 25%;
-    width: 42%;
-    height: 50%;
+@mixin btn($col, $backcol){
+    @include ElementLayout(center, center);
+    @include ItemDefinition($btnW, $btnH);
+    @include ItemStyling($backcol, $col);
+    text-transform: uppercase;
 }
 
-@mixin btn($col, $backcol){
+@mixin ElementLayout($V_align: stretch, $H_align: flex-start, $fdir: row){
     display: flex;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    width: $btnW;
-    height: $btnH;
-    color: $col;
-    background-color: $backcol;
+    align-items: $V_align;
+    justify-content: $H_align;
+    flex-direction: $fdir;
+}
+
+@mixin ItemDefinition($w, $h, $m: 0px){
+    width: $w;
+    height: $h;
+    margin: $m;
+}
+
+@mixin ItemStyling($bkcol: false, $col: false, $img: false, $grd: false){
+    @if $bkcol{
+        background-color: $bkcol;
+    }
+
+    @if $col{
+        color: $col;
+    }
+
+    @if $img{
+        background-image: url($img);
+    }
+
+    @if $grd{
+        background-image: $grd;
+    }
+}
+
+@mixin getImage($i, $w, $h)
+{
+    @include ItemStyling($img: $i);
+    @include ItemDefinition($w, $h);
+    background-repeat: no-repeat;
+    min-width: $w;
+    min-height: $h;
 }
