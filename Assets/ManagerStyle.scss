@@ -1,0 +1,33 @@
+@import "GlobalStyle";
+
+body{
+    margin: 0;
+    background-color: $blueTheme;
+}
+
+#workSpace{
+    @include ElementLayout(center, center, column);
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    background-color: $grayTheme;
+}
+
+.form_header{
+    @include ElementLayout(center, center, column);
+    margin: 10px;
+}
+
+.FormItem{
+    @include ElementLayout(center, space-between, row);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.FormItem > label{
+    color: orange;
+}
+
+#form_buttons > input{
+    @include btn($whiteTheme, $blueTheme);
+}

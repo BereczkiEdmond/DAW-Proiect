@@ -1,0 +1,36 @@
+@import "_Variables";
+@import "_Mixins";
+
+body{
+    margin: 0;
+}
+
+.logo{
+    @include getImage("Images/Logo.png", $logoW, $logoH);
+    margin: 10px;
+}
+
+.phone{
+    @include getImage("Images/Phone.png", $phoneW, $phoneH);
+}
+
+// Font settings ----------------------------
+.t{
+    font-size: 30px;
+}
+
+.h{
+    font-size: 42px;
+}
+
+.dark{
+    color: $grayTheme;
+}
+
+.bright{
+    color: $whiteTheme;
+}
+
+.blue{
+    color: $blueTheme;
+}

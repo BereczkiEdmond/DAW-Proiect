@@ -1,0 +1,25 @@
+@import "GlobalStyle";
+
+$problemColor: #EC7063;
+$successColor: #58D68D;
+
+.problem{
+    background-color: $problemColor;
+}
+
+.success{
+    background-color: $successColor;
+}
+
+.response_panel{
+    @include ElementLayout($H_align: space-between);
+    margin: 10px;
+}
+
+.back_btn{
+    @include btn($grayTheme, $blueTheme);
+}
+
+.m{
+    margin: 0px;
+}

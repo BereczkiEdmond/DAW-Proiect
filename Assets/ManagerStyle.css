@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  background-image: url("Images/Logo.png");
+  width: 54px;
+  height: 68px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 54px;
+  min-height: 68px;
+  margin: 10px;
+}
+
+.phone {
+  background-image: url("Images/Phone.png");
+  width: 311px;
+  height: 554px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 311px;
+  min-height: 554px;
+}
+
+.t {
+  font-size: 30px;
+}
+
+.h {
+  font-size: 42px;
+}
+
+.dark {
+  color: #262a34;
+}
+
+.bright {
+  color: #f9f9f9;
+}
+
+.blue {
+  color: #41e0d8;
+}
+
+body {
+  margin: 0;
+  background-color: #41e0d8;
+}
+
+#workSpace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 100%;
+  background-color: #262a34;
+}
+
+.form_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.FormItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.FormItem > label {
+  color: orange;
+}
+
+#form_buttons > input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #41e0d8;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+#form_buttons > input:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=ManagerStyle.css.map */

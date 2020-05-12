@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  background-image: url("Images/Logo.png");
+  width: 54px;
+  height: 68px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 54px;
+  min-height: 68px;
+  margin: 10px;
+}
+
+.phone {
+  background-image: url("Images/Phone.png");
+  width: 311px;
+  height: 554px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 311px;
+  min-height: 554px;
+}
+
+.t {
+  font-size: 30px;
+}
+
+.h {
+  font-size: 42px;
+}
+
+.dark {
+  color: #262a34;
+}
+
+.bright {
+  color: #f9f9f9;
+}
+
+.blue {
+  color: #41e0d8;
+}
+
+.problem {
+  background-color: #EC7063;
+}
+
+.success {
+  background-color: #58D68D;
+}
+
+.response_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+.back_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #41e0d8;
+  color: #262a34;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.back_btn:hover {
+  cursor: pointer;
+}
+
+.m {
+  margin: 0px;
+}
+/*# sourceMappingURL=ResponseStyle.css.map */

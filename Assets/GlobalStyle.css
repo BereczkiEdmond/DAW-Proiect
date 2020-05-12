@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  background-image: url("Images/Logo.png");
+  width: 54px;
+  height: 68px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 54px;
+  min-height: 68px;
+  margin: 10px;
+}
+
+.phone {
+  background-image: url("Images/Phone.png");
+  width: 311px;
+  height: 554px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 311px;
+  min-height: 554px;
+}
+
+.t {
+  font-size: 30px;
+}
+
+.h {
+  font-size: 42px;
+}
+
+.dark {
+  color: #262a34;
+}
+
+.bright {
+  color: #f9f9f9;
+}
+
+.blue {
+  color: #41e0d8;
+}
+/*# sourceMappingURL=GlobalStyle.css.map */

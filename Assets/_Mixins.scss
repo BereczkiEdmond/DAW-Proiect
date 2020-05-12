@@ -5,9 +5,13 @@
 
 @mixin btn($col, $backcol){
     @include ElementLayout(center, center);
-    @include ItemDefinition($btnW, $btnH);
     @include ItemStyling($backcol, $col);
     text-transform: uppercase;
+    padding: 10px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 @mixin ElementLayout($V_align: stretch, $H_align: flex-start, $fdir: row){
