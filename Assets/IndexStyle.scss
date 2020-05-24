@@ -26,6 +26,14 @@
     height: $longL;
 }
 
+.mid_panel{
+    
+}
+
+#login_btn{
+    @include btn($blueTheme, $grayTheme);
+}
+
 #headerInfo{
     @include ElementLayout($fdir: column);
 }

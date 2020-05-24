@@ -4,13 +4,13 @@
 <?php
     require_once('../Model/Utils.php');
 
-    define("DB_SERVER", "localhost");
-    define("DB_USER", "work");
-    define("DB_PASSWORD", "secret8");
-    define("DB_DATABASE", "daw");
-    define("DB_PORT", 3308);
+    $conn = DBHandler::connectDB(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE, DB_PORT);
 
-    $conn = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE, DB_PORT);
+    session_start();
+    if(!isset($_SESSION['u']) || !isset($_SESSION['pw']))
+        $login_text = 'Not logged in.';
+    else
+        $login_text = 'Logged in as:<br>' . $_SESSION['u'];
 ?>
 
 
@@ -28,6 +28,10 @@
             <div class="container">
                 <div id="LSide1">
                     <div class="logo"></div>
+                    <div class="mid_panel">
+                        <p class="t dark"><?php echo $login_text; ?></p>
+                        <button id="login_btn">Log in</button>
+                    </div>
                     <div class="phone"></div>
                 </div>
 
@@ -94,11 +98,11 @@
                                 {
                         ?>
                                     <div class="scr">
-                                        <img class="car_image" src="<?php echo $row["image1"]; ?>"/>
+                                        <img class="car_image" src="<?php echo $row["image1"]; ?>" alt="Car image"/>
                                     </div>
 
                                     <div class="scr">
-                                        <img class="car_image" src="<?php echo $row["image2"]; ?>"/>
+                                        <img class="car_image" src="<?php echo $row["image2"]; ?>" alt="Car image"/>
                                     </div>
                         <?php 
                                 }   
@@ -165,10 +169,10 @@
                     mail about our new and offers
                 </p>
             </div>
-            <div id="mailBox">
-                <input class="t mar" type="email" placeholder="Your Mail">
+            <form id="mailBox" method="POST" action="../Model/Response.php">
+                <input class="t mar" name="email_address" type="email" pattern="^[a-z|A-Z|0-9]+[@][a-z]+[.]([a-z]{2,3})$" placeholder="Your Mail">
                 <button id="b4" class="mar">send</button>
-            </div>
+            </form>
 
         </div>
     </div>

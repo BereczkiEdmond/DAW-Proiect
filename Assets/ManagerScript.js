@@ -2,6 +2,9 @@ $(document).ready(function(){
     
     $opt = localStorage.getItem('option');
     $("#form_title").text($opt + " manage form");
+    $(".selection_table").hide();
+    $('label[for="remove_id"]').hide();
+    $("#remove_id").hide();
 
     switch($opt)
     {
@@ -14,4 +17,19 @@ $(document).ready(function(){
         break;
     }
 
+    $opt = $opt.toLowerCase();
+
+    $("#add").click(function(){
+        $("#st_"+$opt).hide();
+        $(".fillArea_"+$opt).show();
+        $('label[for="remove_id"]').hide();
+        $("#remove_id").hide();
+    });
+
+    $("#remove").click(function(){
+        $("#st_"+$opt).show();
+        $(".fillArea_"+$opt).hide();
+        $('label[for="remove_id"]').show();
+        $("#remove_id").show();
+    });
 });

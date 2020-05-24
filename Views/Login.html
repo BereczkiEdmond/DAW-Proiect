@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../Assets/LoginStyle.css">
+    </head>
+
+    <body>
+        <div class="login_window">
+            <div class="form_header">
+                <p class="h bright" id="form_title">Log in</p>
+                <button class="home_btn">home</button>
+            </div>
+            <form action="../Model/Response.php" method="POST">
+                <div class="FormItem">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="FormItem">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div id="form_buttons">
+                    <input type=submit name="btn_login" value="Log in">
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="../Assets/jquery-3.4.1.min.js"></script>
+    <script src="../Assets/Controller.js"></script>
+</html>

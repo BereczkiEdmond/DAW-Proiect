@@ -16,10 +16,6 @@ $successColor: #58D68D;
     margin: 10px;
 }
 
-.back_btn{
-    @include btn($grayTheme, $blueTheme);
-}
-
 .m{
     margin: 0px;
 }

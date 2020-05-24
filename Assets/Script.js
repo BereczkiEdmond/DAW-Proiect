@@ -1,13 +1,17 @@
 $(document).ready(function(){
     
+    $("#login_btn").click(function(){
+        window.location.replace("../Views/Login.html");
+    });
+
     $("#b1").click(function(){
         localStorage.setItem('option','Car');
-        window.location.replace("../Views/ItemManager.html");
+        window.location.replace("../Views/ItemManager.php");
     });
 
     $("#b2").click(function(){
         localStorage.setItem('option','Opinion');
-        window.location.replace("../Views/ItemManager.html");
+        window.location.replace("../Views/ItemManager.php");
     });
 
     $("#UpSide").owlCarousel(

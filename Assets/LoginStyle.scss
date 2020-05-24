@@ -1,0 +1,46 @@
+@import "GlobalStyle";
+
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(50deg, $blueTheme 33%, $whiteTheme 66%);
+    min-height: 100%;
+    @include ElementLayout(center, center, column);
+}
+
+.login_window{
+    @include ElementLayout(center, center, column);
+    background-color: $grayTheme;
+    padding: 15px;
+    border: 5px double $highlight_Back;
+    border-radius: 15px;
+}
+
+.form_header{
+    @include ElementLayout(center, center);
+    margin: 10px;
+}
+
+#form_title{
+    margin-right: 10px;
+}
+
+.FormItem{
+    @include ElementLayout(center, space-between, row);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.FormItem > label{
+    color: $formText_Color;
+}
+
+#form_buttons{
+    @include ElementLayout(center, center);
+}
+
+#form_buttons > input{
+    @include btn($whiteTheme, $blueTheme);
+}

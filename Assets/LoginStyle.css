@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  background-image: url("Images/Logo.png");
+  width: 54px;
+  height: 68px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 54px;
+  min-height: 68px;
+  margin: 10px;
+}
+
+.phone {
+  background-image: url("Images/Phone.png");
+  width: 311px;
+  height: 554px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  min-width: 311px;
+  min-height: 554px;
+}
+
+.home_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #9370DB;
+  color: #FFFF00;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.home_btn:hover {
+  cursor: pointer;
+}
+
+.t {
+  font-size: 30px;
+}
+
+.h {
+  font-size: 42px;
+}
+
+.dark {
+  color: #262a34;
+}
+
+.bright {
+  color: #f9f9f9;
+}
+
+.blue {
+  color: #41e0d8;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(50deg, #41e0d8 33%, #f9f9f9 66%);
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login_window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #262a34;
+  padding: 15px;
+  border: 5px double #9370DB;
+  border-radius: 15px;
+}
+
+.form_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+#form_title {
+  margin-right: 10px;
+}
+
+.FormItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.FormItem > label {
+  color: #FFA500;
+}
+
+#form_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#form_buttons > input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #41e0d8;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+#form_buttons > input:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=LoginStyle.css.map */

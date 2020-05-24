@@ -1,7 +1,6 @@
 @import "GlobalStyle";
 
 body{
-    margin: 0;
     background-color: $blueTheme;
 }
 
@@ -9,6 +8,7 @@ body{
     @include ElementLayout(center, center, column);
     margin-left: 20%;
     margin-right: 20%;
+    width: 60%;
     height: 100%;
     background-color: $grayTheme;
 }
@@ -18,14 +18,64 @@ body{
     margin: 10px;
 }
 
+#form_title{
+    margin-right: 10px;
+}
+
+.aux{
+    @include ElementLayout(center, center);
+}
+
+.selection_table{
+    @include ElementLayout(stretch, center, column);
+    margin-bottom: 10px;
+}
+
+.record{
+    display: flex;
+    background-color: $lgrayTheme;
+    border: 4px solid;
+}
+
+.record_item{
+    @include ElementLayout($fdir: column);
+    border-left: 2px solid;
+    padding: 4px;
+
+    &:nth-child(1){ width: 20%; }
+    &:nth-child(2){ width: 25%; }
+    &:nth-child(3){ width: 40%; }
+    &:nth-child(4){ width: 15%; }
+}
+
+#op > .record_item{
+    &:nth-child(1){ width: 20%; }
+    &:nth-child(2){ width: 60%; }
+    &:nth-child(3){ width: 30%; }
+}
+
 .FormItem{
     @include ElementLayout(center, space-between, row);
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.FormItem > label{
-    color: orange;
+.FormItem > label, .menu, label[for="remove_id"]{
+    color: $formText_Color;
+}
+
+.menu{
+    @include ElementLayout(center, center);
+    margin-bottom: 6px;
+}
+
+.images_in{
+    color: $formText_Color;
+    margin-left: 5px;
+}
+
+#form_buttons{
+    @include ElementLayout(center, center);
 }
 
 #form_buttons > input{

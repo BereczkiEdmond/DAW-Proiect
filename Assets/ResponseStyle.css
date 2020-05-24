@@ -23,6 +23,30 @@ body {
   min-height: 554px;
 }
 
+.home_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #9370DB;
+  color: #FFFF00;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.home_btn:hover {
+  cursor: pointer;
+}
+
 .t {
   font-size: 30px;
 }
@@ -66,30 +90,6 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 10px;
-}
-
-.back_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #41e0d8;
-  color: #262a34;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-.back_btn:hover {
-  cursor: pointer;
 }
 
 .m {
