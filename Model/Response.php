@@ -129,7 +129,7 @@
 <html>
     <head>
         <title>Response</title>
-        <link rel="stylesheet" type="text/css" href="../Assets/ResponseStyle.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/Style_css/ResponseStyle.css">
     </head>
     <body class="<?php echo $type; ?>">
         <div class="response_panel">
@@ -137,6 +137,6 @@
             <button class="home_btn">home</button>
         </div>
     </body>
-    <script src="../Assets/jquery-3.4.1.min.js"></script>
-    <script src="../Assets/Controller.js"></script>
+    <script src="../Assets/Script/jquery-3.4.1.min.js"></script>
+    <script src="../Assets/Script/Controller.js"></script>
 </html>

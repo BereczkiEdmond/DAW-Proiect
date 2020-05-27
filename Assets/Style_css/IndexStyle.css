@@ -3,7 +3,7 @@ body {
 }
 
 .logo {
-  background-image: url("Images/Logo.png");
+  background-image: url("../Images/Logo.png");
   width: 54px;
   height: 68px;
   margin: 0px;
@@ -14,7 +14,7 @@ body {
 }
 
 .phone {
-  background-image: url("Images/Phone.png");
+  background-image: url("../Images/Phone.png");
   width: 311px;
   height: 554px;
   margin: 0px;
@@ -209,7 +209,7 @@ body {
 }
 
 #playBtn {
-  background-image: url("Images/PlayBtn.png");
+  background-image: url("../Images/PlayBtn.png");
   width: 171px;
   height: 58px;
   margin: 0px;
@@ -476,7 +476,7 @@ body {
 }
 
 .QMU {
-  background-image: url("Images/QuotationMarkUp.png");
+  background-image: url("../Images/QuotationMarkUp.png");
   width: 14px;
   height: 10px;
   margin: 0px;
@@ -488,7 +488,7 @@ body {
 }
 
 .QMD {
-  background-image: url("Images/QuotationMarkDown.png");
+  background-image: url("../Images/QuotationMarkDown.png");
   width: 14px;
   height: 10px;
   margin: 0px;
@@ -577,7 +577,7 @@ body {
 }
 
 #AllRightsText {
-  background-image: url("Images/AllRights.png");
+  background-image: url("../Images/AllRights.png");
   width: 234px;
   height: 16px;
   margin: 0px;

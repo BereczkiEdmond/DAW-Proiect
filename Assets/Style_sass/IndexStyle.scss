@@ -26,10 +26,6 @@
     height: $longL;
 }
 
-.mid_panel{
-    
-}
-
 #login_btn{
     @include btn($blueTheme, $grayTheme);
 }
@@ -53,7 +49,7 @@
 }
 
 #playBtn{
-    @include getImage("Images/PlayBtn.png", $playBtn_W, $playBtn_H);
+    @include getImage("../Images/PlayBtn.png", $playBtn_W, $playBtn_H);
 }
 
 #LSide1{
@@ -171,12 +167,12 @@
 }
 
 .QMU{
-    @include getImage("Images/QuotationMarkUp.png", $QMW, $QMH);
+    @include getImage("../Images/QuotationMarkUp.png", $QMW, $QMH);
     align-self: flex-start;
 }
 
 .QMD{
-    @include getImage("Images/QuotationMarkDown.png", $QMW, $QMH);
+    @include getImage("../Images/QuotationMarkDown.png", $QMW, $QMH);
     align-self: flex-end;
 }
 
@@ -214,5 +210,5 @@
 }
 
 #AllRightsText{
-    @include getImage("Images/AllRights.png", $AllR_W, $AllR_H);
+    @include getImage("../Images/AllRights.png", $AllR_W, $AllR_H);
 }

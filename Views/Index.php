@@ -16,7 +16,7 @@
 
 <head>
     <title>DAW Proiect</title>
-    <link rel="stylesheet" type="text/css" href="../Assets/IndexStyle.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/Style_css/IndexStyle.css">
     <link rel="stylesheet" href="../Assets/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="../Assets/owlcarousel/owl.theme.default.min.css">
 </head>
@@ -189,7 +189,7 @@
     </div>
 </body>
 
-<script src="../Assets/jquery-3.4.1.min.js"></script>
+<script src="../Assets/Script/jquery-3.4.1.min.js"></script>
 <script src="../Assets/owlcarousel/owl.carousel.min.js"></script>
-<script src="../Assets/Script.js"></script>
+<script src="../Assets/Script/Script.js"></script>
 </html>

@@ -6,12 +6,12 @@ body{
 }
 
 .logo{
-    @include getImage("Images/Logo.png", $logoW, $logoH);
+    @include getImage("../Images/Logo.png", $logoW, $logoH);
     margin: 10px;
 }
 
 .phone{
-    @include getImage("Images/Phone.png", $phoneW, $phoneH);
+    @include getImage("../Images/Phone.png", $phoneW, $phoneH);
 }
 
 .home_btn{

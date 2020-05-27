@@ -11,7 +11,7 @@
 
 <head>
     <title>Item Manager</title>
-    <link rel="stylesheet" type="text/css" href="../Assets/ManagerStyle.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/Style_css/ManagerStyle.css">
 </head>
 
 <body>
@@ -70,15 +70,15 @@
             <div class="fillArea_car">
                 <div class="FormItem">
                     <label for="brand">Brand:</label>
-                    <input type="text" id="brand" name="brand">
+                    <input type="text" id="brand" name="brand" pattern="[a-z|A-Z|0-9]+(\s)*(-)*">
                 </div>
                 <div class="FormItem">
                     <label for="model">Model:</label>
-                    <input type="text" id="model" name="model">
+                    <input type="text" id="model" name="model" pattern="[a-z|A-Z|0-9]+(\s)*(-)*">
                 </div>
                 <div class="FormItem">
                     <label for="engine">Engine:</label>
-                    <input type="text" id="engine" name="engine">
+                    <input type="text" id="engine" name="engine" pattern="[a-z|A-Z|0-9]+(\s)*(-)*">
                 </div>
                 <div class="FormItem">
                     <label for="distance">Distance:</label>
@@ -86,19 +86,19 @@
                 </div>
                 <div class="FormItem">
                     <label for="drivetype">Drive type:</label>
-                    <input type="text" id="drivetype" name="drivetype">
+                    <input type="text" id="drivetype" name="drivetype" pattern="[a-z|A-Z|0-9]+(\s)*(-)*">
                 </div>
                 <div class="FormItem">
                     <label for="fueltype">Fuel type:</label>
-                    <input type="text" id="fueltype" name="fueltype">
+                    <input type="text" id="fueltype" name="fueltype" pattern="[a-z|A-Z|0-9]+(\s)*(-)*">
                 </div>
                 <div class="FormItem">
                     <label for="exterior">Exterior:</label>
-                    <input type="text" id="exterior" name="exterior" placeholder="color">
+                    <input type="text" id="exterior" name="exterior" placeholder="color" pattern="[a-z|A-Z]+(\s)*">
                 </div>
                 <div class="FormItem">
                     <label for="interior">Interior:</label>
-                    <input type="text" id="interior" name="interior" placeholder="color">
+                    <input type="text" id="interior" name="interior" placeholder="color" pattern="[a-z|A-Z]+(\s)*">
                 </div>
                 <div class="FormItem">
                     <label for="price">Price:</label>
@@ -142,17 +142,17 @@
                         }   
                     }
                     ?>
-                </div>
+            </div>
 
 
             <div class="fillArea_opinion">
                 <div class="FormItem">
                     <label for="opinion">Opinion:</label>
-                    <input type="text" id="opinion" name="opinion" placeholder="Opinion text">
+                    <input type="text" id="opinion" name="opinion" placeholder="Opinion text" pattern="[a-z|A-Z|0-9|\s]+(.)*">
                 </div>
                 <div class="FormItem">
                     <label for="author">Author:</label>
-                    <input type="text" id="author" name="author" placeholder="Name of the author">
+                    <input type="text" id="author" name="author" placeholder="Name of the author" pattern="[a-z|A-Z|\s]+">
                 </div>
             </div>
 
@@ -166,8 +166,8 @@
     </div>
 </body>
 
-<script src="../Assets/jquery-3.4.1.min.js"></script>
-<script src="../Assets/ManagerScript.js"></script>
-<script src="../Assets/Controller.js"></script>
+<script src="../Assets/Script/jquery-3.4.1.min.js"></script>
+<script src="../Assets/Script/ManagerScript.js"></script>
+<script src="../Assets/Script/Controller.js"></script>
 
 </html>

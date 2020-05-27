@@ -24,6 +24,8 @@ $(document).ready(function(){
         $(".fillArea_"+$opt).show();
         $('label[for="remove_id"]').hide();
         $("#remove_id").hide();
+
+        $("#remove_id").prop('required',false);
     });
 
     $("#remove").click(function(){
@@ -31,5 +33,7 @@ $(document).ready(function(){
         $(".fillArea_"+$opt).hide();
         $('label[for="remove_id"]').show();
         $("#remove_id").show();
+
+        $("#remove_id").prop('required',true);
     });
 });
